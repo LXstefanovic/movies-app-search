@@ -8,7 +8,7 @@ This application was created with React technology stack.
 It provides an example how to structure scalable React application.
 
 You must first do
-### `npm start`
+### `npm install`
 before running application.
 
 In the project directory, you can run:
