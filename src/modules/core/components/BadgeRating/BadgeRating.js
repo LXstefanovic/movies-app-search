@@ -23,7 +23,6 @@ const styles = theme => ({
         color: theme.palette.common.white,
         padding: theme.spacing.unit,
         display: 'inline-block',
-        margin: `0 ${theme.spacing.unit}px`,
         borderRadius: theme.shape.borderRadius,
         margin: '0 auto',
         fontSize: '14px',
