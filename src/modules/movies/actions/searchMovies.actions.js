@@ -37,7 +37,10 @@ const searchMoviesSuccess = res => ({
 
         const promises = [];
         R.pathOr([], ['data', 'Search'], res).forEach( movie => {
-            promises.push(axios.get(`${url}?i=${R.prop('imdbID', movie)}`))
+            const mId = R.prop('imdbID', movie);
+            const movieUrl = `${url}?i=${mId.trim()}`;
+
+            promises.push(axios.get(movieUrl));
         });
           
         axios.all(promises).then(results => {
